@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Base16 Bright - Gnome Terminal color scheme install script
-# Chris Kempson (http://chriskempson.com)
+# Base16 shapeshifter - Gnome Terminal color scheme install script
+# Tyler Benziger (http://tybenz.com)
 
-[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Bright"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-bright"
+[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 shapeshifter Dark"
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-shapeshifter-dark"
 [[ -z "$GCONFTOOL" ]] && GCONFTOOL=gconftool
 [[ -z "$BASE_KEY" ]] && BASE_KEY=/apps/gnome-terminal/profiles
 
@@ -37,10 +37,10 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "#000000000000:#330033003300:#550055005500:#bb00bb00bb00:#dd00dd00dd00:#ee00ee00ee00:#ff55ff55ff55:#ffffffffffff:#ffbb00112200:#ffcc66dd2244:#ffddaa333311:#aa11cc665599:#7766cc77bb77:#66ffbb33dd22:#dd338811cc33:#bbee664433cc"
-gset string background_color "#000000000000"
-gset string foreground_color "#ee00ee00ee00"
-gset string bold_color "#ee00ee00ee00"
+gset string palette "#000000:#e92f2f:#0ed839:#dddd13:#3b48e3:#f996e2:#23edda:#ababab:#343434:#e92f2f:#0ed839:#dddd13:#3b48e3:#f996e2:#23edda:#f9f9f9"
+gset string background_color "#000000"
+gset string foreground_color "#ababab"
+gset string bold_color "#ababab"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"

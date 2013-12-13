@@ -2,8 +2,8 @@
 # Base16 Mocha - Gnome Terminal color scheme install script
 # Chris Kempson (http://chriskempson.com)
 
-[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Mocha"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-mocha"
+[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Mocha Dark"
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-mocha-dark"
 [[ -z "$GCONFTOOL" ]] && GCONFTOOL=gconftool
 [[ -z "$BASE_KEY" ]] && BASE_KEY=/apps/gnome-terminal/profiles
 
@@ -37,10 +37,10 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "#33BB33222288:#553344663366:#664455224400:#77ee770055aa:#bb88aaffaadd:#dd00cc88cc66:#ee99ee11dddd:#ff55eeeeeebb:#ccbb66007777:#dd2288bb7711:#ff44bbcc8877:#bbeebb5555bb:#77bbbbddaa44:#88aabb33bb55:#aa8899bbbb99:#bbbb99558844"
-gset string background_color "#33BB33222288"
-gset string foreground_color "#dd00cc88cc66"
-gset string bold_color "#dd00cc88cc66"
+gset string palette "#3B3228:#cb6077:#beb55b:#f4bc87:#8ab3b5:#a89bb9:#7bbda4:#d0c8c6:#7e705a:#cb6077:#beb55b:#f4bc87:#8ab3b5:#a89bb9:#7bbda4:#f5eeeb"
+gset string background_color "#3B3228"
+gset string foreground_color "#d0c8c6"
+gset string bold_color "#d0c8c6"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"

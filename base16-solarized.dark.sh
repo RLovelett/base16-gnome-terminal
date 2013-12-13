@@ -2,8 +2,8 @@
 # Base16 Solarized - Gnome Terminal color scheme install script
 # Ethan Schoonover (http://ethanschoonover.com/solarized)
 
-[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Solarized"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-solarized"
+[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Solarized Dark"
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-solarized-dark"
 [[ -z "$GCONFTOOL" ]] && GCONFTOOL=gconftool
 [[ -z "$BASE_KEY" ]] && BASE_KEY=/apps/gnome-terminal/profiles
 
@@ -37,10 +37,10 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "#000022bb3366:#007733664422:#558866ee7755:#665577bb8833:#883399449966:#9933aa11aa11:#eeeeee88dd55:#ffddff66ee33:#ddcc332222ff:#ccbb44bb1166:#bb5588990000:#885599990000:#22aaaa119988:#226688bbdd22:#66cc7711cc44:#dd3333668822"
-gset string background_color "#000022bb3366"
-gset string foreground_color "#9933aa11aa11"
-gset string bold_color "#9933aa11aa11"
+gset string palette "#002b36:#dc322f:#859900:#b58900:#268bd2:#6c71c4:#2aa198:#93a1a1:#657b83:#dc322f:#859900:#b58900:#268bd2:#6c71c4:#2aa198:#fdf6e3"
+gset string background_color "#002b36"
+gset string foreground_color "#93a1a1"
+gset string bold_color "#93a1a1"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"

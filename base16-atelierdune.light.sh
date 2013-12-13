@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Base16 Ocean - Gnome Terminal color scheme install script
-# Chris Kempson (http://chriskempson.com)
+# Base16 Atelier Dune - Gnome Terminal color scheme install script
+# Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/dune)
 
-[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Ocean Dark"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-ocean-dark"
+[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Atelier Dune Light"
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-atelierdune-light"
 [[ -z "$GCONFTOOL" ]] && GCONFTOOL=gconftool
 [[ -z "$BASE_KEY" ]] && BASE_KEY=/apps/gnome-terminal/profiles
 
@@ -37,10 +37,10 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "#2b303b:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#c0c5ce:#65737e:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#eff1f5"
-gset string background_color "#2b303b"
-gset string foreground_color "#c0c5ce"
-gset string bold_color "#c0c5ce"
+gset string palette "#fefbec:#d73737:#60ac39:#cfb017:#6684e1:#b854d4:#1fad83:#a6a28c:#7d7a68:#d73737:#60ac39:#cfb017:#6684e1:#b854d4:#1fad83:#20201d"
+gset string background_color "#fefbec"
+gset string foreground_color "#6e6b5e"
+gset string bold_color "#6e6b5e"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"

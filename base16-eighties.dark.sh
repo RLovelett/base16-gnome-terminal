@@ -2,8 +2,8 @@
 # Base16 Eighties - Gnome Terminal color scheme install script
 # Chris Kempson (http://chriskempson.com)
 
-[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Eighties"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-eighties"
+[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Eighties Dark"
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-eighties-dark"
 [[ -z "$GCONFTOOL" ]] && GCONFTOOL=gconftool
 [[ -z "$BASE_KEY" ]] && BASE_KEY=/apps/gnome-terminal/profiles
 
@@ -37,10 +37,10 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "#22dd22dd22dd:#339933993399:#551155115511:#774477336699:#aa0099ff9933:#dd33dd00cc88:#ee88ee66ddff:#ff22ff00eecc:#ff22777777aa:#ff9999115577:#ffffcccc6666:#9999cccc9999:#6666cccccccc:#66669999cccc:#cccc9999cccc:#dd2277bb5533"
-gset string background_color "#22dd22dd22dd"
-gset string foreground_color "#dd33dd00cc88"
-gset string bold_color "#dd33dd00cc88"
+gset string palette "#2d2d2d:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#d3d0c8:#747369:#f2777a:#99cc99:#ffcc66:#6699cc:#cc99cc:#66cccc:#f2f0ec"
+gset string background_color "#2d2d2d"
+gset string foreground_color "#d3d0c8"
+gset string bold_color "#d3d0c8"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"

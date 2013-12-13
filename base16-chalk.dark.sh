@@ -2,8 +2,8 @@
 # Base16 Chalk - Gnome Terminal color scheme install script
 # Chris Kempson (http://chriskempson.com)
 
-[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Chalk"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-chalk"
+[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Chalk Dark"
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-chalk-dark"
 [[ -z "$GCONFTOOL" ]] && GCONFTOOL=gconftool
 [[ -z "$BASE_KEY" ]] && BASE_KEY=/apps/gnome-terminal/profiles
 
@@ -37,10 +37,10 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "#115511551155:#220022002200:#330033003300:#550055005500:#bb00bb00bb00:#dd00dd00dd00:#ee00ee00ee00:#ff55ff55ff55:#ffbb99ffbb11:#eeddaa998877:#ddddbb2266ff:#aacccc226677:#1122ccffcc00:#66ffcc22eeff:#ee11aa33eeee:#ddeeaaff88ff"
-gset string background_color "#115511551155"
-gset string foreground_color "#dd00dd00dd00"
-gset string bold_color "#dd00dd00dd00"
+gset string palette "#151515:#fb9fb1:#acc267:#ddb26f:#6fc2ef:#e1a3ee:#12cfc0:#d0d0d0:#505050:#fb9fb1:#acc267:#ddb26f:#6fc2ef:#e1a3ee:#12cfc0:#f5f5f5"
+gset string background_color "#151515"
+gset string foreground_color "#d0d0d0"
+gset string bold_color "#d0d0d0"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"

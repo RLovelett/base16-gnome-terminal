@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Base16 Ocean - Gnome Terminal color scheme install script
-# Chris Kempson (http://chriskempson.com)
+# Base16 Railscasts - Gnome Terminal color scheme install script
+# Ryan Bates (http://railscasts.com)
 
-[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Ocean Dark"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-ocean-dark"
+[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Railscasts Light"
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-railscasts-light"
 [[ -z "$GCONFTOOL" ]] && GCONFTOOL=gconftool
 [[ -z "$BASE_KEY" ]] && BASE_KEY=/apps/gnome-terminal/profiles
 
@@ -37,10 +37,10 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "#2b303b:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#c0c5ce:#65737e:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#eff1f5"
-gset string background_color "#2b303b"
-gset string foreground_color "#c0c5ce"
-gset string bold_color "#c0c5ce"
+gset string palette "#f9f7f3:#da4939:#a5c261:#ffc66d:#6d9cbe:#b6b3eb:#519f50:#e6e1dc:#5a647e:#da4939:#a5c261:#ffc66d:#6d9cbe:#b6b3eb:#519f50:#2b2b2b"
+gset string background_color "#f9f7f3"
+gset string foreground_color "#3a4055"
+gset string bold_color "#3a4055"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"

@@ -2,8 +2,8 @@
 # Base16 Default - Gnome Terminal color scheme install script
 # Chris Kempson (http://chriskempson.com)
 
-[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Default"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-default"
+[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Default Dark"
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-default-dark"
 [[ -z "$GCONFTOOL" ]] && GCONFTOOL=gconftool
 [[ -z "$BASE_KEY" ]] && BASE_KEY=/apps/gnome-terminal/profiles
 
@@ -37,10 +37,10 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "#115511551155:#220022002200:#330033003300:#550055005500:#bb00bb00bb00:#dd00dd00dd00:#ee00ee00ee00:#ff55ff55ff55:#aacc44114422:#dd2288444455:#ff44bbff7755:#9900aa995599:#7755bb55aaaa:#66aa99ffbb55:#aaaa775599ff:#88ff55553366"
-gset string background_color "#115511551155"
-gset string foreground_color "#dd00dd00dd00"
-gset string bold_color "#dd00dd00dd00"
+gset string palette "#151515:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#d0d0d0:#505050:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#f5f5f5"
+gset string background_color "#151515"
+gset string foreground_color "#d0d0d0"
+gset string bold_color "#d0d0d0"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"

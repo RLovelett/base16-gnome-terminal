@@ -2,8 +2,8 @@
 # Base16 Green Screen - Gnome Terminal color scheme install script
 # Chris Kempson (http://chriskempson.com)
 
-[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Green Screen"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-greenscreen"
+[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Green Screen Dark"
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-greenscreen-dark"
 [[ -z "$GCONFTOOL" ]] && GCONFTOOL=gconftool
 [[ -z "$BASE_KEY" ]] && BASE_KEY=/apps/gnome-terminal/profiles
 
@@ -37,10 +37,10 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "#000011110000:#000033330000:#000055550000:#000077770000:#000099990000:#0000bbbb0000:#0000dddd0000:#0000ffff0000:#000077770000:#000099990000:#000077770000:#0000bbbb0000:#000055550000:#000099990000:#0000bbbb0000:#000055550000"
-gset string background_color "#000011110000"
-gset string foreground_color "#0000bbbb0000"
-gset string bold_color "#0000bbbb0000"
+gset string palette "#001100:#007700:#00bb00:#007700:#009900:#00bb00:#005500:#00bb00:#007700:#007700:#00bb00:#007700:#009900:#00bb00:#005500:#00ff00"
+gset string background_color "#001100"
+gset string foreground_color "#00bb00"
+gset string bold_color "#00bb00"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"

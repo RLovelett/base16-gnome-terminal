@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Base16 Ocean - Gnome Terminal color scheme install script
+# Base16 Tomorrow - Gnome Terminal color scheme install script
 # Chris Kempson (http://chriskempson.com)
 
-[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Ocean Dark"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-ocean-dark"
+[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="Base 16 Tomorrow Light"
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="base-16-tomorrow-light"
 [[ -z "$GCONFTOOL" ]] && GCONFTOOL=gconftool
 [[ -z "$BASE_KEY" ]] && BASE_KEY=/apps/gnome-terminal/profiles
 
@@ -37,10 +37,10 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "#2b303b:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#c0c5ce:#65737e:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#eff1f5"
-gset string background_color "#2b303b"
-gset string foreground_color "#c0c5ce"
-gset string bold_color "#c0c5ce"
+gset string palette "#ffffff:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#c5c8c6:#969896:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#1d1f21"
+gset string background_color "#ffffff"
+gset string foreground_color "#373b41"
+gset string bold_color "#373b41"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"
